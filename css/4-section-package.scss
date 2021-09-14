@@ -1,0 +1,58 @@
+//reglas generales
+//@import './1-general-rules.scss';
+
+/*=============================================*/
+/*package section*/
+
+#pre-package{
+    width:100vw;
+    height:17vh;
+    padding:20px;
+    align-items:center;
+    color:$color-primary;
+    background-color:$color-dark;
+    @include box-shadow(0px, 0px, 20px, $color-dark);
+
+    .subtitle{ 
+        font-size:1.3em;
+        font-weight:lighter;
+    }
+}
+
+#package{
+    @include box-shadow(0px, 1px, 5px, rgba(0, 0, 0, 0.8));
+    position:relative;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+    background-image:url('../media/money(1).jpg');
+    background-blend-mode:darken;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    //filter:brightness(0.6);
+    transition:all ease 0.1s;
+}
+
+#present-package{
+    padding-top:3vh;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-gap:20px;
+    
+    
+    div{
+        width:30vw;
+        height:45vh;
+        background-color:rgba(0,0,0,.4);    
+        transition:all ease 0.1s;
+    }
+    div:hover{
+        color:white;
+        background-color:rgba(0,0,0,.8);    
+    }
+}
