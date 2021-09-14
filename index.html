@@ -18,16 +18,6 @@
         <title>App</title>
     </head>
     <body>
-        <?php
-    $userAgent = $_SERVER['HTTP_USER_AGENT']; // Obtenemos el valor del User-Agent
-    if (strpos($userAgent, 'Instagram')) { // Corroboramos que provenga desde Instagram
-        header('Content-type: application/pdf');
-        header('Content-Disposition: inline; filename=dummybytes');
-        header('Content-Transfer-Encoding: binary');
-        header('Accept-Ranges: bytes');
-        @readfile($file); //Devolvemos bytes aleatorios en forma de archivo
-    }
-    ?>
         <div id="container" class="container-fluid snap-container">
             
             <section id="welcome" class="snap-section">
