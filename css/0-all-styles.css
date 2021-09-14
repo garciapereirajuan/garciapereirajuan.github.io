@@ -4,7 +4,7 @@
 /*============================================*/
 /*General styles*/
 #container {
-  width: 98vw;
+  width: 100vw;
   margin: 0 auto;
   padding: 0; }
 
@@ -39,13 +39,13 @@
   z-index: -1; }
 
 #welcome {
-  width: 98vw;
+  width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas: " " "present"; }
   #welcome #present {
-    width: 90vw;
+    width: 90%;
     grid-area: present; }
     #welcome #present .title {
       color: #bfdd2a; }
@@ -89,14 +89,14 @@
     #welcome .font-main .subtitle {
       font-size: 1.8em; }
     #welcome #btns .btn {
-      width: 90%;
+      width: 600px;
       font-size: 1.2em; }
     #welcome #btns .btn div {
       grid-template-columns: 10% 80%; } }
 /*=============================================*/
 /*package section*/
 #pre-package {
-  width: 98vw;
+  width: 100vw;
   height: 17vh;
   padding: 20px;
   align-items: center;
