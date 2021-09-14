@@ -1,0 +1,35 @@
+//reglas generales
+//@import './1-general-rules.scss';
+
+/*============================================*/
+/*General styles*/
+#container{
+    width:100vw;
+    margin:0;
+    padding:0;
+}
+
+.snap-section {
+    height:100vh;
+    display: flex;
+    justify-content:center;
+    //align-items:center;
+    scroll-snap-align:start;
+    //border:5px solid white;
+    box-decoration-break: slice;
+}
+
+.snap-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height:100vh;
+    //asi cuando demos un clic para cambiar de seccion el scroll será con fuidez
+    scroll-behavior:smooth;
+}
+
+#package{
+    //content:' ';
+    
+}
+
+

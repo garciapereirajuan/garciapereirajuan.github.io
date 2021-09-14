@@ -1,0 +1,120 @@
+//reglas generales
+//@import './1-general-rules.scss';
+
+/*=============================================*/
+/*package section*/
+
+#pre-package{
+    width:100%;
+    height:17vh;
+    padding:20px;
+    align-items:center;
+    color:$color-primary;
+    background-color:$color-dark;
+    @include box-shadow(0px, 0px, 20px, $color-dark);
+
+    .subtitle{ 
+        font-size:1.3em;
+        font-weight:lighter;
+    }
+}
+
+#package{
+    @include box-shadow(0px, 1px, 5px, rgba(0, 0, 0, 0.8));
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    margin:0;
+    padding:0;
+    background-image:url('../media/money(1).jpg');
+    background-blend-mode:darken;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    //filter:brightness(0.6);
+    transition:all ease 0.1s;
+}
+
+
+#present-package{
+    padding-top:3vh;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-gap:10px;
+    
+    
+    div{
+        width:30vw;
+        height:45vh;
+        background-color:rgba(0,0,0,.4);    
+        transition:all ease 0.1s;
+        @include border-radius(5px);
+    }
+    div:hover{
+        //color:white;
+        background-color:rgba(0,0,0,.8);    
+    }
+}
+
+div .present-p{
+    display:grid;
+    align-content:center;
+    position:absolute;
+    width:50vw !important;
+    height:40vh;
+    background:rgba($color-primary,.98) !important;
+    color:$color-dark;
+    font-size:1.4em;
+    font-weight:bold;
+    align-self: center;
+    justify-self: center;
+    align-items:center;
+    justify-items:center;
+    cursor:pointer;
+    @include border-radius(5px);
+    @include box-shadow(5px, 5px, 10px, $color-dark);
+    transition:all ease 1s;
+
+}
+div .present-p:hover{
+    background:rgba($color-primary-hover,1) !important;
+    @include box-shadow(0px, 0px, 15px, black);
+    transition:all ease 1s;
+}
+div .present-p i{
+    
+    font-size:2em;
+}
+
+@media(max-width:$width-recept){
+    #present-package{
+        padding-top:3vh;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        grid-gap:10px;
+
+        div{
+            width:45vw;
+            height:40vh;
+        }
+    }
+
+    #package{
+        height:max-content;
+        padding-bottom:2vh;
+    }
+
+    div .present-p{
+        width:90vw !important;
+        height:40vh;
+        margin-top:25vw;
+        align-self: start;
+        text-align:center;
+
+    }
+}
+
