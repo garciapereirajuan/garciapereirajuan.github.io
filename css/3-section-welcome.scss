@@ -10,7 +10,7 @@
     top:0;
     left:0;
     width:100vw;
-    height:100%;
+    height:100vh;
     margin:0;
     padding:0;
     background-image:url('../media/laptop-3174729(1).jpg'); 
@@ -22,7 +22,7 @@
 }
 
 #welcome{
-    width:100vw;
+    width:100%;
     height:100vh;
     display: grid;
     grid-template-columns: 1fr auto;
