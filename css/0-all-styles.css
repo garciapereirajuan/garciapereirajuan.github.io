@@ -79,7 +79,7 @@
 
 @media (max-width: 700px) {
   #welcome::before {
-    background-image: url("../media/laptop-3174729(1)-media(1).jpg"); } }
+    background-image: url("../media/laptop-3174729(1)-media(2).jpg"); } }
 @media (max-width: 650px) {
   #welcome::before {
     background-position: left;
@@ -89,7 +89,7 @@
     grid-template-columns: 0px; }
     #welcome #present {
       margin: 0 auto;
-      width: 400px; }
+      width: 380px; }
     #welcome .font-main .title {
       font-size: 3.1em; }
     #welcome .font-main .subtitle {
