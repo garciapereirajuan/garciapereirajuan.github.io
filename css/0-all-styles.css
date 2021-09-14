@@ -74,12 +74,18 @@
     grid-template-columns: 20% 60%;
     align-items: center; }
 
-@media (max-width: 650px) {
-  #welcome::before {
-    background-position: left; 
-    background-image:url('../media/laptop-3174729(1)-media(1).jpg');
-  }
+@media(max-width:700px){
+    #welcome::before{
+        background-image:url('../media/laptop-3174729(1)-media(1).jpg');
 
+    }
+}
+
+@media (max-width:$width-recept) {
+    #welcome::before{
+        background-position:left;
+        background-image:url('../media/laptop-3174729(1)-media(2).jpg');
+    } 
   #welcome {
     grid-template-columns: 0px; }
     #welcome #present {
