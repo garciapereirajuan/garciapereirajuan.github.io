@@ -4,7 +4,7 @@
 /*============================================*/
 /*General styles*/
 #container {
-  width: 99vw;
+  width: 98vw;
   margin: 0 auto;
   padding: 0; }
 
@@ -28,7 +28,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -39,13 +39,13 @@
   z-index: -1; }
 
 #welcome {
-  width: 100%;
+  width: 98vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas: " " "present"; }
   #welcome #present {
-    width: 650px;
+    width: 90vw;
     grid-area: present; }
     #welcome #present .title {
       color: #bfdd2a; }
@@ -77,7 +77,7 @@
 @media (max-width:$width-recept) {
     #welcome::before{
         background-position:left;
-        background-image:none;
+        background-image:url('../media/laptop-3174729(1)-media(2).jpg');;
     } 
   #welcome {
     grid-template-columns: 0px; }
@@ -96,7 +96,7 @@
 /*=============================================*/
 /*package section*/
 #pre-package {
-  width: 100%;
+  width: 98vw;
   height: 17vh;
   padding: 20px;
   align-items: center;
