@@ -1,11 +1,14 @@
 /*==============================================*/
 /*General rules*/
+.container {
+  width: 100vw;
+  height: 100vh; }
 
 /*============================================*/
 /*General styles*/
 #container {
   width: 100vw;
-  margin: 0 auto;
+  margin: 0;
   padding: 0; }
 
 .snap-section {
@@ -28,10 +31,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
+  background-image: url("../media/laptop-3174729(1).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -39,13 +43,13 @@
   z-index: -1; }
 
 #welcome {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas: " " "present"; }
   #welcome #present {
-    width: 90%;
+    width: 650px;
     grid-area: present; }
     #welcome #present .title {
       color: #bfdd2a; }
@@ -73,12 +77,14 @@
     grid-template-columns: 20% 60%;
     align-items: center; }
 
+@media (max-width: 700px) {
+  #welcome::before {
+    background-image: url("../media/laptop-3174729(1)-media(1).jpg"); } }
+@media (max-width: 650px) {
+  #welcome::before {
+    background-position: left;
+    background-image: url("../media/laptop-3174729(1)-media(2).jpg"); }
 
-@media (max-width:$width-recept) {
-    #welcome::before{
-        background-position:left;
-        background-image:url('../media/laptop-3174729(1)-media(2).jpg');
-    } 
   #welcome {
     grid-template-columns: 0px; }
     #welcome #present {
@@ -89,14 +95,14 @@
     #welcome .font-main .subtitle {
       font-size: 1.8em; }
     #welcome #btns .btn {
-      width: 600px;
+      width: 90%;
       font-size: 1.2em; }
     #welcome #btns .btn div {
       grid-template-columns: 10% 80%; } }
 /*=============================================*/
 /*package section*/
 #pre-package {
-  width: 100vw;
+  width: 100%;
   height: 17vh;
   padding: 20px;
   align-items: center;
