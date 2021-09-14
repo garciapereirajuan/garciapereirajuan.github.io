@@ -76,7 +76,9 @@
 
 @media (max-width: 650px) {
   #welcome::before {
-    background-position: left; }
+    background-position: left; 
+    background-image:url('../media/laptop-3174729(1)-media(1).jpg');
+  }
 
   #welcome {
     grid-template-columns: 0px; }
