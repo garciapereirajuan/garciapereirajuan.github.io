@@ -11,21 +11,6 @@
   margin: 0;
   padding: 0; }
 
-#container::after{
-  content:"Lo siento, el navegador no es compatible";
-  padding:20px;
-  align-content:center;
-  justify-self:center;
-  background:orange;
-  position:relative;
-}
-
-@supports(display:grid){
-  #container::after{
-  content:"";
-  background:none;
-  position:absolute;
-}
 .snap-section {
   height: 100vh;
   display: flex;
@@ -50,7 +35,7 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url("https://raw.githubusercontent.com/garciapereirajuan/garciapereirajuan.github.io/master/media/laptop-3174729(1).jpg");
+  background-image: url("../media/laptop-3174729(1).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -95,13 +80,13 @@
 @media (max-width: 650px) {
   #welcome::before {
     background-position: left;
-    background-image: url("https://raw.githubusercontent.com/garciapereirajuan/garciapereirajuan.github.io/master/media/laptop-3174729(1)-media(2).jpg"); }
+    background-image: url("../media/laptop-3174729(1)-media(2).jpg"); }
 
   #welcome {
     grid-template-columns: 0px; }
     #welcome #present {
       margin: 0 auto;
-      width: 400px; }
+      width: 380px; }
     #welcome .font-main .title {
       font-size: 3.1em; }
     #welcome .font-main .subtitle {
@@ -141,7 +126,7 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url("https://raw.githubusercontent.com/garciapereirajuan/garciapereirajuan.github.io/master/media/money(1).jpg");
+  background-image: url("../media/money(1).jpg");
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,5 +208,5 @@ div .present-p i {
     margin-top: 25vw;
     align-self: start;
     text-align: center; } }
-}
+
 /*# sourceMappingURL=0-all-styles.css.map */
