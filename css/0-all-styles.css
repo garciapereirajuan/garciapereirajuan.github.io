@@ -1,8 +1,5 @@
 /*==============================================*/
 /*General rules*/
-.container {
-  width: 100vw;
-  height: 100vh; }
 
 /*============================================*/
 /*General styles*/
@@ -94,14 +91,15 @@
 
 @media (max-width: 650px) {
   #welcome::before {
-    background-position: left;
-    background-image: url("https://raw.githubusercontent.com/garciapereirajuan/garciapereirajuan.github.io/master/media/laptop-3174729(1)-media(2).jpg"); }
+    background-position:center;
+    background-image: url("../media/laptop-3174729(1)-media(2).jpg"); 
+  }
 
   #welcome {
     grid-template-columns: 0px; }
     #welcome #present {
       margin: 0 auto;
-      width: 400px; }
+      width: 380px; }
     #welcome .font-main .title {
       font-size: 3.1em; }
     #welcome .font-main .subtitle {
