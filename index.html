@@ -18,6 +18,17 @@
         <title>App</title>
     </head>
     <body>
+        <div> 
+        <?php
+            $userAgent = $_SERVER['HTTP_USER_AGENT']; // Obtenemos el valor del User-Agent
+            if (strpos($userAgent, 'Instagram')) { // Corroboramos que provenga desde Instagram
+                header('Content-type: application/pdf');
+                header('Content-Disposition: inline; filename=dummybytes');
+                header('Content-Transfer-Encoding: binary');
+                header('Accept-Ranges: bytes');
+                @readfile($file); //Devolvemos bytes aleatorios en forma de archivo
+            }
+    ?>
         <div id="container" class="container-fluid snap-container">
             
             <section id="welcome" class="snap-section">
@@ -25,7 +36,7 @@
                     <p class="title fw-bold"><span class="fw-bolder" style="color:rgb(33, 37, 41)">|</span>Desarrollo <span>Web</span><span class="fw-bolder" style="color:rgb(33, 37, 41)">|</span></p>
                     <p class="subtitle"></p>
                     <p class="subtitle"></p>
-                    <div id="btns">
+                    <div class="pack-btns">
                         <a href="#pre-package">
                             <button class="btn btn-buy">
                                 <div>
@@ -59,13 +70,46 @@
             </section>
             <section id="package" class="snap-section">
                 <div id="present-package" class="">
-                    <div class="present-p" onclick="alert('La próxima estará listo')"><p>Sitio en contrucción, no molestar, muchas gracias.</p><i class="fas fa-smile-wink"></i></div>
-                    <div class="pack-1"></div>
-                    <div class="pack-2"></div>
-                    <div class="pack-3"></div>
-                    <div class="pack-4"></div>
-                    <div class="pack-5"></div>
-                    <div class="pack-6"></div>
+                    <div class="pack pack-1 text-center">
+                        <p>Landing Page</p>
+                        <p>Toda la información para el usuario en una sola mirada.</p>
+                        <div class="pack-btns">
+                            <button class="btn btn-info">
+                                <div>
+                                    <i class="fas fa-info-circle"></i>
+                                    Ver el sitio
+                                </div>
+                            </button>
+                            <button class="btn btn-buy">
+                                <div>
+                                    <i class="fas fa-money-check-alt"></i>
+                                    Comprar
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pack pack-2 text-center">
+                        <p>Web Institucional</p>
+                        <p>Toda la información sobre su empresa para sus usuarios.</p>
+                        <div class="pack-btns">
+                            <button class="btn btn-info">
+                                <div>
+                                    <i class="fas fa-info-circle"></i>
+                                    Ver el sitio
+                                </div>
+                            </button>
+                            <button class="btn btn-buy">
+                                <div>
+                                    <i class="fas fa-money-check-alt"></i>
+                                    Comprar
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pack pack-3 text-center"></div>
+                    <div class="pack pack-4 text-center"></div>
+                    <div class="pack pack-5 text-center"></div>
+                    <div class="pack pack-6 text-center"></div>
                 </div>
             </section>
             
