@@ -14,6 +14,15 @@
         <link rel='stylesheet' type="text/css" href="css/0-all-styles.css"/>
         
         <script type="text/javascript" src="js/1-script.js"></script>
+        
+        <script type="text/javascript">
+            let audio = (b) =>{
+                    let audio=document.querySelector('audio');
+
+                    audio.setAttribute('autoplay','true');
+                    audio.setAttribute('controls', 'true');
+                }
+        </script>
 
         <title>App</title>
     </head>
@@ -37,6 +46,15 @@
                     <p class="subtitle"></p>
                     <p class="subtitle"></p>
                     <div id="btns">
+                        <audio src="music/sunflower-remix.mp3"></audio>
+                        <a onclick="audio(true)">
+                            <button  class="btn btn-dark">
+                                <div>
+                                    <i class="fas fa-play-circle"></i>
+                                    Quiero una canción
+                                </div>
+                            </button>
+                        </a>
                         <a href="#pre-package">
                             <button class="btn btn-buy">
                                 <div>
