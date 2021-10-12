@@ -27,17 +27,6 @@
         <title>App</title>
     </head>
     <body>
-        <div> 
-        <?php
-            $userAgent = $_SERVER['HTTP_USER_AGENT']; // Obtenemos el valor del User-Agent
-            if (strpos($userAgent, 'Instagram')) { // Corroboramos que provenga desde Instagram
-                header('Content-type: application/pdf');
-                header('Content-Disposition: inline; filename=dummybytes');
-                header('Content-Transfer-Encoding: binary');
-                header('Accept-Ranges: bytes');
-                @readfile($file); //Devolvemos bytes aleatorios en forma de archivo
-            }
-    ?>
         <div id="container" class="container-fluid snap-container">
             
             <section id="welcome" class="snap-section">
@@ -46,7 +35,7 @@
                     <p class="subtitle"></p>
                     <p class="subtitle"></p>
                     <div id="btns">
-                        <audio src="music/sunflower-remix.mp3"></audio>
+                        <audio src="music/stand-by-me(1).mp3"></audio>
                         <a onclick="audio(true)">
                             <button  class="btn btn-dark">
                                 <div>
