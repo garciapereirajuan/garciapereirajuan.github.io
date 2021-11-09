@@ -35,7 +35,7 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url("../media/laptop-3174729(1).jpg");
+  /*background-image: url("../media/laptop-3174729(1).jpg");*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -80,7 +80,7 @@
 @media (max-width: 650px) {
   #welcome::before {
     background-position: left;
-    background-image: url("../media/laptop-3174729(1)-media(2).jpg"); }
+    /*background-image: url("../media/laptop-3174729(1)-media(2).jpg");*/}
 
   #welcome {
     grid-template-columns: 0px; }
@@ -125,7 +125,7 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url("../media/money(1).jpg");
+  /*background-image: url("../media/money(1).jpg");*/
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
