@@ -15,6 +15,9 @@
         
         <script type="text/javascript" src="js/1-script.js"></script>
         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+        
         <script type="text/javascript">
             let audio = (b) =>{
                     let audio=document.querySelector('audio');
@@ -26,7 +29,10 @@
 
         <title>App</title>
     </head>
-    <body>
+    <body id="bg-body">
+        
+        <script> var setVanta = ()=>{ if (window.VANTA) window.VANTA.NET({el:"#bg-body",mouseControls:true,touchControls:true,gyroControls:false,minHeight:200.00,minWidth:200.00,scale:1.00,scaleMobile:1.00,backgroundColor:0x1d1d45})}</script>
+        
         <div id="container" class="container-fluid snap-container">
             
             <section id="welcome" class="snap-section">
