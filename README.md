@@ -1,3 +1,3 @@
 ## IMPORTANTE: 
 
-##      Este sitio redirecciona a mi [sitio actual](juangarciapereira.web.app/projects)
+##      Este sitio redirecciona a mi [sitio actual](https://juangarciapereira.web.app/projects)
